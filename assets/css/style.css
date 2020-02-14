@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif, Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #231F20;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: #231F20;
+    margin-bottom: 100px;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 1030px;
+}
+.logo{
+    display: flex;
+    justify-content: left;
+    width: 505px;
+    height: 90px;
+}
+.logo img{
+    width: 117px;
+    height: 100px;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 515px;
+    height: 100px;
+}
+.menu ul{
+    display: flex;
+    justify-content: right;
+}
+.menu ul, .menu li{
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+    margin: 3px;
+}
+.menu a:hover{
+    background-color: #fff;
+    color: #231F20;
+}
+#banner{
+    background-image: url('../images/banner2\ cópia.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    margin-top: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_banner{
+    width: 1030px;
+    height: 240px;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 500;
+    text-align: center;
+}
+.column{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#modalidades{
+    display: flex;
+    justify-content: center;
+    height: 1180px;
+    border-top: 3px solid #F94C02;
+    border-bottom: 3px solid #F94C02;
+}
+.container .titulo_modalidades{
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+.conteudo_modalidades{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.modalidade{
+    flex: 1;
+    margin-bottom: 40px;
+}
+.modalidade:hover{
+    opacity: 0.4;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+.img_mod{
+    height: 250px;
+    width: 250px;
+    background-image: url('../images/muay-thai.jpg');
+    background-position: right;
+    background-size: cover;
+}
+.img_mod1{
+    height: 250px;
+    width: 250px;
+    background-image: url('../images/jiu-jitsu.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img_mod2{
+    height: 250px;
+    width: 250px;
+    background-image: url('../images/grappling.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img_mod3{
+    height: 250px;
+    width: 250px;
+    background-image: url('../images/capoeira.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img_mod4{
+    height: 252px;
+    width: 250px;
+    background-image: url('../images/boxe.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img_mod5{
+    height: 250px;
+    width: 250px;
+    background-image: url('../images/capoeirakid.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img_mod6{
+    height: 250px;
+    width: 250px;
+    background-image: url('../images/bjjkids.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img_mod7{
+    height: 250px;
+    width: 250px;
+    background-image: url('../images/boxekids.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img_mod8{
+    height: 250px;
+    width: 250px;
+    background-image: url('../images/personal.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.nome_mod{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    width: 250px;
+    text-align: center;
+    line-height: 35px;
+}
+#horario{
+    display: flex;
+    justify-content: center;
+    height: 348px;
+    border-bottom: 3px solid #F94C02;
+}
+.container2{
+    display: flex;
+    width: 1030px;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo_hora{
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+.titulo_galeria{
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 36px;
+}
+table{
+    height: 190px;
+    width: 560px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+table .semana{
+    border-right: 1px solid #fff;
+}
+table .fimsemanahora{
+    border-top: 1px solid #fff;
+}
+table .semanahora{
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+#galeria{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #F94C02;
+}
+.powr-instagram-feed{
+    display: flex;
+    width: 1030px;
+}
