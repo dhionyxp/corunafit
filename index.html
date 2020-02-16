@@ -7,9 +7,12 @@
     <title>Coruña FIT</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500&display=swap" rel="stylesheet">
-    <script src="https://www.powr.io/powr.js?platform=html"></script>
+    <!-- <script src="https://www.powr.io/powr.js?platform=html"></script> -->
+    <script src="./assets/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="./assets/js/scroll.js"></script>
 </head>
 <body>
+    
     <!-- Header -->
     <header>
         <div class="container">
@@ -18,15 +21,23 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Modalidades</a></li>
-                    <li><a href="">Horários</a></li>
-                    <li><a href="">Galéria</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="#menu" class="teste" onclick="teste()">Home</a></li>
+                    <li><a href="#modalidadesacademia">Modalidades</a></li>
+                    <li><a href="#horariofuncionamento">Horários</a></li>
+                    <li><a href="#galeriainsta">Galéria</a></li>
+                    <li><a href="#meiosdecontato">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </header>
+    <section id="click">
+        <div class="containerclick">
+            <div class="clickmodalidade">
+                <img src="./assets/images/boxekids.jpg" width="300" height="300" />
+            </div>
+        </div>
+    </section>
+    <div id="menu"></div>
     <!-- Section Banner -->
     <section id="banner">
         <div class="container">
@@ -35,6 +46,7 @@
             </div>
         </div>
     </section>
+    <div id="modalidadesacademia"></div>
     <!-- Section Tabela de Funcionamento -->
     <section id="modalidades">
         <div class="container column">
@@ -90,15 +102,17 @@
                         Boxeo Kids
                     </div>
                 </div>
-                <div class="modalidade">
+                <div class="modalidade2">
                     <div class="img_mod8"></div>
-                    <div class="nome_mod">
+                    <div id="horariofuncionamento"></div>
+                    <div class="nome_mod2">
                         Entrenamiento Personal y en Grupo
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- horario de Funcionamento -->
     <section id="horario">
         <div class="containerhora">
             <div class="titulo_hora">
@@ -115,11 +129,13 @@
                         <td class="fimsemanahora">09:00 a 14:00</td>
                     </tr>
                 </table>
+                <div id="galeriainsta"></div>
             </div>
         </div>
     </section>
     <!-- Galeria do Instagram -->
     <section id="galeria">
+        <div id="meiosdecontato"></div>
         <div class="container2">
             <div class="titulo_galeria">
                 nuestra galeria
@@ -129,12 +145,39 @@
     </section>
     <!-- Footer -->
     <footer>
-        <div class="contatos">
-
-        </div>
-        <div class="copy">
-
+        <div class="container2">
+            <div class="titulo_contato" name="teste">
+                nuestros medios de contacto
+            </div>
+            <div class="conteudo_contato">
+                <div class="endereco">
+                    <div class="titulo">
+                        dirección
+                    </div>
+                    <div class="conteudo">
+                        Calle ángel rebollo, 20 bajo, 15002 - a coruña
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="titulo">
+                        redes sociales
+                    </div>
+                    <div class="conteudo">
+                        <a href="https://www.instagram.com/coruna.fit/?hl=pt-br" target="_blank"><img src="./assets/images/Iconeinsta.png" width="48" height="48" /></a>
+                        <a href="https://www.facebook.com/corunafit/" target="_blank"><img src="./assets/images/iconeface.png" width="48" height="48" /></a>
+                    </div>
+                </div>
+                <div class="telefone">
+                    <div class="titulo">
+                        Número de teléfono
+                    </div>
+                    <div class="conteudo">
+                        +34 672 18 42 29
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                Copyright © 2020 - Todos los derechos reservados - Desarrollado por <a href="https://api.whatsapp.com/send?phone=5518998202618&text=Hola,%20encontr%C3%A9%20tu%20contacto%20en%20un%20sitio%20web%20al%20que%20acced%C3%AD." target="_blank">Luan Diniz</a>
+            </div>
         </div>
     </footer>
-</body>
-</html>
