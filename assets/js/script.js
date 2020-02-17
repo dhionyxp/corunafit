@@ -122,4 +122,27 @@
         document.getElementById('jiukidext').style.display = "none"
         document.getElementById('boxekidext').style.display = "none"
     }
+    function aparecermenu(){
+        var teste = document.getElementById('menusite');
+
+        if(teste.style.display == 'flex'){
+            teste.style.display = 'none';
+        }else{
+            teste.style.display = 'flex';
+        }
+    }
+    function adicionamenu(){
+        var menu1 = document.getElementById('menu1').style.backgroundColor='#231F20';
+        var menu2 = document.getElementById('menu2').style.backgroundColor='#231F20';;
+        var menu3 = document.getElementById('menu3').style.backgroundColor='#231F20';;
+        var menu4 = document.getElementById('menu4').style.backgroundColor='#231F20';;
+        var menu5 = document.getElementById('menu5').style.backgroundColor='#231F20';;
+
+
+
+        var el = document.getElementById('menusite');
+        el.addEventListener('click', function(e) {
+            e.target.style.backgroundColor = '#F94C02';
+        });
+    }
 }

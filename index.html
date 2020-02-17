@@ -14,7 +14,6 @@
     <script type="text/javascript" src="./assets/js/scroll.js"></script>
 </head>
 <body onload="apagartudo()">
-    
     <!-- Header -->
     <header>
         <div class="container">
@@ -22,13 +21,20 @@
                 <img src="./assets/images/logo.png" />
             </div>
             <div class="menu">
-                <ul>
-                    <li><a href="#menu">Home</a></li>
-                    <li><a href="#modalidadesacademia">Modalidades</a></li>
-                    <li><a href="#horariofuncionamento">Horários</a></li>
-                    <li><a href="#galeriainsta">Galéria</a></li>
-                    <li><a href="#meiosdecontato">Contacto</a></li>
-                </ul>
+                <nav>
+                    <div class="menumobile" onclick="aparecermenu()">
+                        <div class="mmline"></div>
+                        <div class="mmline"></div>
+                        <div class="mmline"></div>
+                    </div>
+                    <ul id="menusite">
+                        <li><a href="#menu" id="menu1" onclick="adicionamenu()">Home</a></li>
+                        <li><a href="#modalidadesacademia" id="menu2" onclick="adicionamenu()">Modalidades</a></li>
+                        <li><a href="#horariofuncionamento" id="menu3" onclick="adicionamenu()">Horários</a></li>
+                        <li><a href="#galeriainsta" id="menu4" onclick="adicionamenu()">Galéria</a></li>
+                        <li><a href="#meiosdecontato" id="menu5" onclick="adicionamenu()">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -165,7 +171,7 @@
     <section id="banner">
         <div class="container">
             <div class="text_banner">
-                TU SALUD Y TU CUERPO PRIMEIRO
+                TU SALUD Y TU CUERPO
             </div>
         </div>
     </section>
