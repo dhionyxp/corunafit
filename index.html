@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coruña FIT</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link REL="SHORTCUT ICON" HREF="./assets/images/logo.ico">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500&display=swap" rel="stylesheet">
     <!-- <script src="https://www.powr.io/powr.js?platform=html"></script> -->
     <script src="./assets/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
     <script type="text/javascript" src="./assets/js/scroll.js"></script>
 </head>
-<body>
+<body onload="apagartudo()">
     
     <!-- Header -->
     <header>
@@ -21,7 +23,7 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#menu" class="teste" onclick="teste()">Home</a></li>
+                    <li><a href="#menu">Home</a></li>
                     <li><a href="#modalidadesacademia">Modalidades</a></li>
                     <li><a href="#horariofuncionamento">Horários</a></li>
                     <li><a href="#galeriainsta">Galéria</a></li>
@@ -30,10 +32,131 @@
             </div>
         </div>
     </header>
-    <section id="click">
-        <div class="containerclick">
-            <div class="clickmodalidade">
-                <img src="./assets/images/boxekids.jpg" width="300" height="300" />
+    <section id="modalidade_ext">
+        <div class="container_modalidadeext">
+            <div class="extends">
+                <div class="teste">
+                    <div class="layoutmod" id="muayext">
+                        <div class="teste_titulo">
+                            Muay Thai
+                        </div>
+                        <div class="teste_desc">
+                            El muay thai, o boxeo tailandés, es un arte marcial originario de Tailandia, donde 
+                            se considera un deporte nacional. Esta disciplina física y mental, que incluye ataques
+                             de combate de pie, se conoce como "el arte de las ocho armas", porque se caracteriza 
+                             por el uso combinado de puños, codos, rodillas, espinillas y pies, y se asocia con una 
+                             buena preparación física que lo convierte en una lucha de contacto total muy eficiente.
+                        </div>
+                        <img src="./assets/images/muay-thai.jpg" width="300" height="300" />
+                    </div>
+                    <div class="layoutmod" id="jiuext">
+                        <div class="teste_titulo">
+                            Brazilian Jiu-Jitsu
+                        </div>
+                        <div class="teste_desc">
+                            El jiu-jitsu es un arte marcial japonés que utiliza técnicas de golpe de palanca, 
+                            giro y presión para derribar y dominar a un oponente. Su origen, como sucede con 
+                            casi todas las antiguas artes marciales, no puede señalarse con total certeza, 
+                            lo que se sabe con certeza es que su principal entorno de desarrollo y refinación 
+                            fue en las escuelas samurai, la casta guerrera de Japón.
+                        </div>
+                        <img src="./assets/images/jiu-jitsu.jpg" width="300" height="300" />
+                    </div>
+                    <div class="layoutmod" id="grapplingext">
+                        <div class="teste_titulo">
+                            Grappling
+                        </div>
+                        <div class="teste_desc">
+                            Lucha (en inglés: grappling) es una expresión utilizada para generalizar cualquier 
+                            estilo de lucha, ya sea de pie o en el suelo. Es el arte de controlar el cuerpo del 
+                            oponente. Se puede aplicar en pie y lucha en tierra.
+                        </div>
+                        <img src="./assets/images/grappling.jpg" width="300" height="300" />
+                    </div>
+                   <div class="layoutmod" id="capoeiraext">
+                        <div class="teste_titulo">
+                            Capoeira
+                        </div>
+                        <div class="teste_desc">
+                            La capoeira o capoeiragem es una expresión cultural brasileña que combina arte 
+                            marcial, deporte, cultura popular, danza y música. Desarrollado en Brasil por 
+                            descendientes de esclavos africanos, se caracteriza por golpes y movimientos 
+                            ágiles y complejos, utilizando principalmente patadas y planos, además de 
+                            cabezazos, rodillas, codos, acrobacias en el suelo o por encima.
+                        </div>
+                        <img src="./assets/images/capoeira.jpg" width="300" height="300" />
+                    </div>
+                    <div class="layoutmod" id="boxeext">
+                        <div class="teste_titulo">
+                            Boxeo
+                        </div>
+                        <div class="teste_desc">
+                            El boxeo es un deporte de combate, en el que los luchadores usan solo sus puños, 
+                            tanto para defensa como para ataque. La palabra deriva del cuadro inglés, 
+                            o pugilismo (para golpear con los puños), expresión utilizada en Inglaterra 
+                            entre 1000 y 1850. Contrariamente a lo que muchos dicen, el boxeo no apareció 
+                            en la Antigua Grecia sino en Mesopotamia, más precisamente en Sumer.
+                        </div>
+                        <img src="./assets/images/boxe.jpg" width="300" height="300" />
+                    </div>
+                     <div class="layoutmod" id="capoeirakidext">
+                        <div class="teste_titulo">
+                            Capoeira Kids
+                        </div>
+                        <div class="teste_desc">
+                            La capoeira o capoeiragem es una expresión cultural brasileña que combina arte 
+                            marcial, deporte, cultura popular, danza y música. Desarrollado en Brasil por 
+                            descendientes de esclavos africanos, se caracteriza por golpes y movimientos 
+                            ágiles y complejos, utilizando principalmente patadas y planos, además de 
+                            cabezazos, rodillas, codos, acrobacias en el suelo o por encima, con entrenamiento 
+                            almente adaptado para niños.
+                        </div>
+                        <img src="./assets/images/capoeirakid.jpg" width="300" height="300" />
+                    </div>
+                    <div class="layoutmod" id="jiukidext">
+                        <div class="teste_titulo">
+                            Brazilian Jiu-Jitsu Kids
+                        </div>
+                        <div class="teste_desc">
+                            El jiu-jitsu es un arte marcial japonés que utiliza técnicas de golpe de palanca, 
+                            giro y presión para derribar y dominar a un oponente. Su origen, como sucede con 
+                            casi todas las antiguas artes marciales, no puede señalarse con total certeza, 
+                            lo que se sabe con certeza es que su principal entorno de desarrollo y refinación 
+                            fue en las escuelas samurai, la casta guerrera de Japón, con el formación adaptada 
+                            ecialmente para niños.
+                        </div>
+                        <img src="./assets/images/bjjkids.jpg" width="300" height="300" />
+                    </div>
+                    <div class="layoutmod" id="boxekidext">
+                        <div class="teste_titulo">
+                            Boxeo Kids
+                        </div>
+                        <div class="teste_desc">
+                            El boxeo es un deporte de combate, en el que los luchadores usan solo sus puños, 
+                            tanto para defensa como para ataque. La palabra deriva del cuadro inglés, 
+                            o pugilismo (para golpear con los puños), expresión utilizada en Inglaterra 
+                            entre 1000 y 1850. Contrariamente a lo que muchos dicen, el boxeo no apareció 
+                            en la Antigua Grecia sino en Mesopotamia, más precisamente en Sumer, con formación 
+                            adaptada especialmente para niños.
+                        </div>
+                        <img src="./assets/images/boxekids.jpg" width="300" height="300" />
+                    </div>
+                    <div class="layoutmod" id="personalext">
+                        <div class="teste_titulo">
+                            Entrenamiento Personal y en Grupo
+                        </div>
+                        <div class="teste_desc"> 
+                            El entrenador personal (del entrenador personal inglés) es un profesional que debe 
+                            tener una capacitación en educación física, que puede enseñar y supervisar la 
+                            capacitación siguiendo los objetivos de quienes lo contratan y respetando los 
+                            principios básicos de la capacitación.
+                        </div>
+                        <img src="./assets/images/personal.jpg" width="450" height="300" />
+                    </div>
+                </div>
+                <div class="fechar" onclick="fecharmodalidade()">
+                    <img src="./assets/images/x.png" width="50" height="50" />
+                </div>
             </div>
         </div>
     </section>
@@ -55,55 +178,55 @@
             </div>
             <div class="conteudo_modalidades">
                 <div class="modalidade">
-                    <div class="img_mod"></div>
+                    <div class="img_mod" onclick="muaythai()"></div>
                     <div class="nome_mod">
                         Muay-Thai
                     </div>
                 </div>
                 <div class="modalidade">
-                    <div class="img_mod1"></div>
+                    <div class="img_mod1" onclick="jiujitsu()"></div>
                     <div class="nome_mod">
                         Brazilian Jiu-Jitsu
                     </div>
                 </div>
                 <div class="modalidade">
-                    <div class="img_mod2"></div>
+                    <div class="img_mod2" onclick="grappling()"></div>
                     <div class="nome_mod">
                         Grappling
                     </div>
                 </div>
                 <div class="modalidade">
-                    <div class="img_mod3"></div>
+                    <div class="img_mod3" onclick="capoeira()"></div>
                     <div class="nome_mod">
                         Capoeira
                     </div>
                 </div>
                 <div class="modalidade">
-                    <div class="img_mod4"></div>
+                    <div class="img_mod4" onclick="boxe()"></div>
                     <div class="nome_mod">
                         Boxeo
                     </div>
                 </div>
                 <div class="modalidade">
-                    <div class="img_mod5"></div>
+                    <div class="img_mod5" onclick="capoeirakid()"></div>
                     <div class="nome_mod">
                         Capoeira Kids
                     </div>
                 </div>
                 <div class="modalidade">
-                    <div class="img_mod6"></div>
+                    <div class="img_mod6" onclick="jiukid()"></div>
                     <div class="nome_mod">
                         Brazilian Jiu-Jitsu Kids
                     </div>
                 </div>
                 <div class="modalidade">
-                    <div class="img_mod7"></div>
+                    <div class="img_mod7" onclick="boxekid()"></div>
                     <div class="nome_mod">
                         Boxeo Kids
                     </div>
                 </div>
                 <div class="modalidade2">
-                    <div class="img_mod8"></div>
+                    <div class="img_mod8" onclick="personal()"></div>
                     <div id="horariofuncionamento"></div>
                     <div class="nome_mod2">
                         Entrenamiento Personal y en Grupo
