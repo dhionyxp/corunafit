@@ -214,6 +214,9 @@ header{
     height: auto;
     border-bottom: 3px solid #F94C02;
 }
+.containerhora{
+    margin-bottom: 36px;
+}
 .container2{
     display: flex;
     width: 1030px;
@@ -345,7 +348,7 @@ footer .copy{
     width: 100%;
 }
 .teste{
-    flex: 2;
+    flex: 4;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -355,8 +358,8 @@ footer .copy{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 650px;
     background-color: #000;
     border-radius: 4px;
 }
@@ -368,19 +371,19 @@ footer .copy{
     margin-right: 20px;
 }
 .teste_titulo{
-    font-size: 17px;
+    font-size: 35px;
     font-weight: 500;
     margin-bottom: 10px;
-    color: #F94C02;
+    color: #fff;
 }
 .teste_desc{
     text-align: justify;
-    font-size: 14px;
+    font-size: 25px;
     margin-bottom: 10px;
     padding: 10px;
-    color: #F94C02;
+    color: #fff;
 }
-.muay-thai img{
+#layoutmod img{
     border-radius: 4px;
 }
 .menumobile{
@@ -415,10 +418,38 @@ footer .copy{
         align-items: center;
     }
     .teste{
-        flex:3;
+        flex:9;
     }
     #banner, #horario, #galeria, footer, #modalidades, #modalidade_ext{
         width: 1024px;
+    }
+    .menu ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #231F20;
+    }
+    .menu li{
+        margin: 10px;
+    }
+    .menu a{
+        font-size: 30px;
+    }
+    header, .menu{
+        height: auto;
+    }
+    .menumobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .endereco .titulo, .endereco .conteudo, .social .titulo, .telefone .titulo, .telefone .conteudo, .containerhora .titulo_hora, .containerhora .conteudo_horario{
+        font-size: 30px;
+    }
+    .copy{
+        font-size: 15px;
     }
 }
 
@@ -440,7 +471,7 @@ footer .copy{
         align-items: center;
     }
     .teste{
-        flex: 3;
+        flex: 9;
     }
     #banner, #horario, #galeria, footer, #modalidades,  #modalidade_ext{
         width: 1024px;
@@ -460,5 +491,17 @@ footer .copy{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+    .endereco .titulo, .endereco .conteudo, .social .titulo, .telefone .titulo, .telefone .conteudo, .containerhora .titulo_hora, .containerhora .conteudo_horario{
+        font-size: 30px;
+    }
+    .copy{
+        font-size: 15px;
+    }
+    .menu li{
+        margin: 10px;
+    }
+    .menu a{
+        font-size: 30px;
     }
 }
