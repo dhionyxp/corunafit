@@ -117,14 +117,8 @@ header{
     min-width: 250px;
     margin-bottom: 40px;
 }
-.modalidade2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-    width: 1030px;
-}
-.modalidade:hover, .modalidade2:hover{
+
+.modalidade:hover{
     opacity: 0.4;
     cursor: pointer;
     transition: ease 0.3s;
@@ -187,7 +181,28 @@ header{
 }
 .img_mod8{
     height: 250px;
-    width: 500px;
+    width: 250px;
+    background-image: url('../images/ffight.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img_mod9{
+    height: 250px;
+    width: 250px;
+    background-image: url('../images/hiit.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img_mod10{
+    height: 250px;
+    width: 250px;
+    background-image: url('../images/tfuncional.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img_mod11{
+    height: 250px;
+    width: 250px;
     background-image: url('../images/personal.jpg');
     background-position: center;
     background-size: cover;
@@ -197,14 +212,6 @@ header{
     font-size: 36px;
     font-weight: 500;
     width: 250px;
-    text-align: center;
-    line-height: 35px;
-}
-.nome_mod2{
-    color: #fff;
-    font-size: 36px;
-    font-weight: 500;
-    width: 500px;
     text-align: center;
     line-height: 35px;
 }
@@ -359,8 +366,9 @@ footer .copy{
     justify-content: center;
     align-items: center;
     width: 800px;
-    height: 650px;
-    background-color: #000;
+    height: auto;
+    padding: 20px;
+    background-color: #231F20;
     border-radius: 4px;
 }
 .fechar{
