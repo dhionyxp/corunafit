@@ -5,6 +5,7 @@
 }
 body{
     background-color: #231F20;
+    overflow-x: hidden;
 }
 .modalidades a{
     transition: ease 2s;
@@ -34,7 +35,7 @@ header{
 .logo{
     display: flex;
     justify-content: left;
-    width: 505px;
+    flex: 1;
 }
 .logo img{
     width: 190px;
@@ -45,7 +46,7 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 515px;
+    flex: 1;
     height: 120px;
 }
 .menu ul{
@@ -434,16 +435,20 @@ footer .copy{
     background-color: #F94C02;
 }
 
-@media (max-width:1024px){
-    .container{
-        max-width: 800px;
+@media(max-width:1046px){
+    body{
+        max-width: 1440px;
+        width: 1046px;
+    }
+    .container, .container2{
+        max-width: 900px;
     }
     .text_banner{
         line-height: 240px;
-        max-width: 800px;
+        max-width: 900px;
     }
     .conteudo_modalidades {
-        max-width: 800px;
+        max-width: 900px;
     }
     .modalidade{
         display: flex;
@@ -453,30 +458,15 @@ footer .copy{
     .teste{
         flex:9;
     }
-    #banner, #horario, #galeria, footer, #modalidades, #modalidade_ext{
-        width: 1024px;
+    #menusite a{
+        font-size: 20px;
     }
-    .menu ul{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        background-color: #231F20;
-    }
-    .menu li{
-        margin: 10px;
-    }
+    /* #banner, #horario, #galeria, footer, #modalidades, #modalidade_ext{
+        width: 1046px;
+    } */
     .menu a{
-        font-size: 30px;
-    }
-    header, .menu{
-        height: auto;
-    }
-    .menumobile{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        font-size: 20px;
+        margin: 0;
     }
     .endereco .titulo, .endereco .conteudo, .social .titulo, .telefone .titulo, .telefone .conteudo, .containerhora .titulo_hora, .containerhora .conteudo_horario{
         font-size: 30px;
@@ -487,14 +477,37 @@ footer .copy{
     }
 }
 
-@media (max-width:600px){
-    .container{
+@media(max-width:800px){
+    body{
+        max-width: 1440px;
+        width: 800px;
+    }
+    .container, .container2{
+        max-width: 700px;
+    }
+    #menusite a{
+        font-size: 15px;
+    }
+    #banner .text_banner{
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    #galeria{
+        display: none;
+    }
+    body{
+        max-width: 1440px;
+        width: 600px;
+    }
+    .container, .container2{
         max-width: 600px;
     }
-    .text_banner{
+    #banner .text_banner{
         line-height: 240px;
         max-width: 600px;
-        font-size: 65px;
+        font-size: 30px;
     }
     .conteudo_modalidades {
         max-width: 600px;
@@ -507,9 +520,6 @@ footer .copy{
     .teste{
         flex: 9;
     }
-    #banner, #horario, #galeria, footer, #modalidades,  #modalidade_ext{
-        width: 1024px;
-    }
     .menu ul{
         display: none;
         flex-direction: column;
@@ -538,4 +548,83 @@ footer .copy{
     .menu a{
         font-size: 30px;
     }
+    table td{
+        padding: 5px;
+    }
+    table{
+        font-size: 12px;
+    }
+    table .hora{
+        font-size: 12px;
+    }
+    .modalidades .titulo_modalidades{
+        text-align: center;
+    }
+    @media only screen and (max-width:375px){
+        body{
+            max-width: 1440px;
+            width: 375px;
+        }
+        #galeria{
+            display: none;
+        }
+        .container, .container2{
+            max-width: 320px;
+        }
+        #banner .text_banner{
+            line-height: 240px;
+            max-width: 320px;
+            font-size: 30px;
+        }
+        .conteudo_modalidades {
+            max-width: 320px;
+        }
+        .modalidade{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .teste{
+            flex: 9;
+        }
+        .menu ul{
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background-color: #231F20;
+        }
+        header, .menu{
+            height: auto;
+        }
+        .menumobile{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .endereco .titulo, .endereco .conteudo, .social .titulo, .telefone .titulo, .telefone .conteudo, .containerhora .titulo_hora, .containerhora .conteudo_horario{
+            font-size: 30px;
+        }
+        .copy{
+            font-size: 15px;
+        }
+        .menu li{
+            margin: 10px;
+        }
+        .menu a{
+            font-size: 30px;
+        }
+        table td{
+            padding: 5px;
+        }
+        table{
+            font-size: 12px;
+        }
+        table .hora{
+            font-size: 12px;
+        }
+        #modalidades .titulo_modalidades{
+            text-align: center;
+        }
 }
