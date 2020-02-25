@@ -159,21 +159,35 @@ header{
     background-size: cover;
 }
 .img_mod5{
-    height: 250px;
+    height: 252px;
     width: 250px;
-    background-image: url('../images/capoeirakid.jpg');
+    background-image: url('../images/muaykid.jpg');
     background-position: center;
     background-size: cover;
 }
 .img_mod6{
-    height: 250px;
+    height: 252px;
     width: 250px;
     background-image: url('../images/bjjkids.jpg');
     background-position: center;
     background-size: cover;
 }
 .img_mod7{
-    height: 250px;
+    height: 252px;
+    width: 250px;
+    background-image: url('../images/crianca2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img_mod12{
+    height: 252px;
+    width: 250px;
+    background-image: url('../images/capoeirakid.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img_mod13{
+    height: 252px;
     width: 250px;
     background-image: url('../images/boxekids.jpg');
     background-position: center;
@@ -255,25 +269,28 @@ header{
     margin-bottom: 36px;
 }
 table{
-    height: 190px;
-    width: 560px;
+    height: auto;
+    width: auto;
     box-sizing: border-box;
     border: 2px solid #fff;
-    padding: 10px;
     text-align: center;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
 }
-table .semana{
-    border-right: 1px solid #fff;
+table td{
+    padding: 10px; 
 }
-table .fimsemanahora{
-    border-top: 1px solid #fff;
+table .titulos{
+    margin-bottom: 20px;
+    border-bottom: 2px solid gray;
 }
-table .semanahora{
-    border-top: 1px solid #fff;
-    border-right: 1px solid #fff;
+table .horario{
+    border-bottom: 2px solid gray;
+}
+table .hora{
+    border-bottom: 2px solid gray;
+    font-size: 17px;
 }
 #galeria{
     display: flex;
@@ -320,6 +337,14 @@ footer .conteudo_contato{
 .conteudo_contato .telefone{
     padding-bottom: 20px;
     margin-bottom: 20px;
+}
+.telefone .conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.telefone .conteudo img{
+    margin-right: 5px;
 }
 footer .copy{
     position: static;
@@ -456,6 +481,7 @@ footer .copy{
     .endereco .titulo, .endereco .conteudo, .social .titulo, .telefone .titulo, .telefone .conteudo, .containerhora .titulo_hora, .containerhora .conteudo_horario{
         font-size: 30px;
     }
+    
     .copy{
         font-size: 15px;
     }
